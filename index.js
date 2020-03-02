@@ -28,9 +28,10 @@ const inquirer = require("inquirer");
         ])
         .then(answers => {
             console.log(answers);
-            let file = `
-            # Title
-            Project Title ${answers.projectTitle}
+        
+            
             `
-            fs.writeFile('README.md', file, () => {})
+            fs.writeFile('Profile.html', content, () => {})
+
+              }); 
         });
